@@ -1,0 +1,622 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid e63e39d7-6ac0-4ffd-8aa3-1841a4541b55)
+
+  (paper "A4")
+
+  (title_block
+    (title "Paranoids Con Badge")
+    (date "2022-06-21")
+    (rev "A")
+    (company "Yahoo")
+    (comment 1 "See LICENSE file in project root for terms.")
+    (comment 2 "Copyright Yahoo, Licensed under the terms of the Apache-2.0 license.")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 44.45 16.51) (size 25.4 12.7) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 25da08da-fc4b-4e04-bb4d-5f8fdecf9821)
+    (property "Sheet name" "Eye LEDs" (id 0) (at 44.45 15.7984 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "eye_leds.kicad_sch" (id 1) (at 44.45 29.7946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 132.08 16.51) (size 25.4 12.7) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 9fd62386-529f-4178-941a-e8394d1832cc)
+    (property "Sheet name" "Peripherals (buttons, NFC, microphone)" (id 0) (at 132.08 15.7984 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "periphs.kicad_sch" (id 1) (at 132.08 29.7946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 102.87 16.51) (size 25.4 12.7) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid b23cb93b-0789-4373-a4a3-50b69830ddd6)
+    (property "Sheet name" "MCU" (id 0) (at 102.87 15.7984 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "mcu.kicad_sch" (id 1) (at 102.87 29.7946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 15.24 16.51) (size 25.4 12.7) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid c867c346-d368-4302-926d-fd4f4b61cf9f)
+    (property "Sheet name" "LED chain" (id 0) (at 15.24 15.7984 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "led_chain.kicad_sch" (id 1) (at 15.24 29.7946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 73.66 16.51) (size 25.4 12.7) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid f5488d43-90f0-4802-a436-5b323d0cace2)
+    (property "Sheet name" "Power Supplies" (id 0) (at 73.66 15.7984 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "power.kicad_sch" (id 1) (at 73.66 29.7946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f" (page "2"))
+    (path "/25da08da-fc4b-4e04-bb4d-5f8fdecf9821" (page "3"))
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2" (page "4"))
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc" (page "5"))
+    (path "/b23cb93b-0789-4373-a4a3-50b69830ddd6" (page "6"))
+  )
+
+  (symbol_instances
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/0b013bd4-bb40-4b40-8cf1-70688da402a9"
+      (reference "#FLG0101") (unit 1) (value "PWR_FLAG") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/2abe06c6-7f7f-4d32-8794-2a80f65c6d20"
+      (reference "#FLG0102") (unit 1) (value "PWR_FLAG") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/df84200e-732d-4d0f-ab77-92aa4dcbb9e5"
+      (reference "#PWR01") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/5a6436ed-2d96-41c9-b263-59601fca3a19"
+      (reference "#PWR02") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/01386135-0c8d-4210-a0fe-91f37094e627"
+      (reference "#PWR03") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/6b02a165-e18f-4d09-ba9c-b8c7f4431302"
+      (reference "#PWR04") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/5e928b0b-f44f-4a4d-bfb3-aaa4ec684a8d"
+      (reference "#PWR05") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/c3d04229-ecc8-4469-b50a-dc50f3f48ac6"
+      (reference "#PWR06") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/2f1d5c9a-0f9b-41dc-a0ce-1a4abd1be80e"
+      (reference "#PWR07") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/c3eccaac-4a82-406f-b740-8cf319f6d52c"
+      (reference "#PWR08") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/15bc3054-3eb2-49c1-be5e-318fb6f97800"
+      (reference "#PWR09") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/2fe3de89-4ecb-4170-9525-40e76aa4ad68"
+      (reference "#PWR010") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/a8f7c0cf-bcd4-40c9-8674-fd8f8a8ff764"
+      (reference "#PWR011") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/4cfc7711-c058-4e8a-8b85-cbec4a63198c"
+      (reference "#PWR012") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/274a2eb8-33fb-4cdf-b1cb-3cdc3ab2985d"
+      (reference "#PWR013") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/4c74c43f-9be6-420d-8665-7b6bc3b76779"
+      (reference "#PWR014") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/e14c3610-8bee-4a2b-8131-64d30e7be5d9"
+      (reference "#PWR015") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/7f83b7be-2dcd-4ddf-840b-08d634ccee89"
+      (reference "#PWR016") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/f77a7760-c7b4-4a10-8ead-5e70b89024d0"
+      (reference "#PWR017") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/8464afc8-0261-408c-a296-14f93d9e5d44"
+      (reference "#PWR018") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/24fd99f6-b0e3-45ea-9a3e-249c3d4c8501"
+      (reference "#PWR019") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/ebfbf16b-8371-4066-9f59-b26538bb31e4"
+      (reference "#PWR020") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/2b82ab7a-96f7-4507-ab63-049b35707f92"
+      (reference "#PWR021") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/f42aff80-77bf-4ed4-b9f2-28e06fa379b4"
+      (reference "#PWR022") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/957847ac-9901-483a-b5fb-c301857e4172"
+      (reference "#PWR023") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/0eefe0b5-fa95-42af-b452-f6e5635fef2c"
+      (reference "#PWR024") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/b11eef01-d8c7-43e2-9bdb-962d87c2e37b"
+      (reference "#PWR025") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/4f007182-1ee3-423e-8dda-9c02325e64bb"
+      (reference "#PWR026") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/9f272da9-b3cd-4e53-858f-449251e1455d"
+      (reference "#PWR027") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/13c9aa75-9fcf-4c80-ad99-5cab431bb651"
+      (reference "#PWR028") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/42bfa964-5901-421c-8e03-2a6cb57cd640"
+      (reference "#PWR029") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/74175f75-602d-4291-86bb-fe57559bed87"
+      (reference "#PWR030") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/703d2830-d45b-4ec4-a6d8-c8d2a1cb5246"
+      (reference "#PWR031") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/11d93e22-ddd2-4366-bf8c-d5b1eb998792"
+      (reference "#PWR032") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/a8cf2c0c-b05f-49c2-b1ea-da60c3389d48"
+      (reference "#PWR033") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/374e4944-1aee-4587-96d4-ec06879b26f0"
+      (reference "#PWR034") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/4fac2162-ac86-44e2-be7f-01630d0ae31e"
+      (reference "#PWR035") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/cc00f04d-629a-4c36-954e-4b567f792804"
+      (reference "#PWR036") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/7b4785ae-38fa-40af-8e85-9cb73fc24431"
+      (reference "#PWR037") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/c3d403a8-9263-4dbc-bc8c-3ec913ce9070"
+      (reference "#PWR038") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/da695e9c-616a-4388-9e22-2f14a295ac24"
+      (reference "#PWR039") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/e3d0b03c-d67d-48be-a5fb-69543dc61fbe"
+      (reference "#PWR040") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/175a04b6-29eb-4bba-9e0a-ea2dc8a0d5c6"
+      (reference "#PWR041") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/0db5b789-80fa-4b69-a93f-e5821a8a98b5"
+      (reference "#PWR042") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/b23cb93b-0789-4373-a4a3-50b69830ddd6/87bd2151-89ab-4c45-a370-00103c9e1f63"
+      (reference "#PWR043") (unit 1) (value "+BATT") (footprint "")
+    )
+    (path "/b23cb93b-0789-4373-a4a3-50b69830ddd6/e3d955dd-1a65-47ca-95f5-d7f2364d29d0"
+      (reference "#PWR044") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/b23cb93b-0789-4373-a4a3-50b69830ddd6/1a29cad6-d9af-4eab-96b7-dfa1f563fc49"
+      (reference "#PWR045") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/b23cb93b-0789-4373-a4a3-50b69830ddd6/b448036c-9ad6-44b2-bf01-7238739e991f"
+      (reference "#PWR046") (unit 1) (value "+BATT") (footprint "")
+    )
+    (path "/b23cb93b-0789-4373-a4a3-50b69830ddd6/f230f4bd-679f-49a3-ad7b-7ef686af4636"
+      (reference "#PWR047") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/b23cb93b-0789-4373-a4a3-50b69830ddd6/d2bbeca0-4f86-4b87-a209-daf0f973ac63"
+      (reference "#PWR048") (unit 1) (value "+BATT") (footprint "")
+    )
+    (path "/b23cb93b-0789-4373-a4a3-50b69830ddd6/54f56e24-4634-4cce-aa9f-6070bcf48374"
+      (reference "#PWR049") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/dd119b55-19d4-4413-bb4b-e7dfd7f78b4d"
+      (reference "#PWR050") (unit 1) (value "+BATT") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/491d4058-b22e-458a-9886-cf1f3b34bb9b"
+      (reference "#PWR051") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/3a7b350e-3548-4144-ae5e-ce92a33dad18"
+      (reference "#PWR052") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/3a1d706e-c2d2-4129-ba36-9a0c7aa2812c"
+      (reference "#PWR053") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/4da54379-e686-4b0c-bf41-0bb6a0df26a6"
+      (reference "#PWR054") (unit 1) (value "+BATT") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/9f06c70a-afe7-4d44-9dd4-612b4c8da589"
+      (reference "#PWR055") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/55a4f4b6-aa06-4de0-b3ad-5fe5e0441532"
+      (reference "#PWR056") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/5ae612d6-eb1d-4957-ae46-018522d3b5c3"
+      (reference "#PWR057") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/7b828b7b-924f-4469-ac61-11213f61b844"
+      (reference "#PWR058") (unit 1) (value "+BATT") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/bff5f9c0-b825-48c3-8891-df31b795b5dc"
+      (reference "#PWR059") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/916cf3fc-262c-486d-9c38-be0bd7e2dbed"
+      (reference "#PWR060") (unit 1) (value "+BATT") (footprint "")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/7a8d8b32-55e4-44b9-bdf8-beb9b60d91d2"
+      (reference "#PWR061") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/f7a3c5f6-d51e-484f-bca6-c853bf914ee0"
+      (reference "#PWR062") (unit 1) (value "+BATT") (footprint "")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/7c5c194f-11f9-49a9-bfe1-a3165d383b5c"
+      (reference "#PWR063") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/fda399ec-7ac2-4472-9594-6c33b986ae2c"
+      (reference "#PWR064") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/2090d90d-6b9e-4ffc-b0db-973b9d96a6ea"
+      (reference "#PWR065") (unit 1) (value "+BATT") (footprint "")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/de1efad1-9c3b-4ac5-ae0d-7f9f18346949"
+      (reference "#PWR066") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/d584ff17-2084-4976-afc1-6162c3224f6d"
+      (reference "#PWR067") (unit 1) (value "+BATT") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/34ae7edc-d184-47ed-9350-f37deff49b27"
+      (reference "#PWR068") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/c33bcc91-3fa7-4652-82b8-ccecf02db146"
+      (reference "#PWR069") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/ef618b2e-8491-4c93-9a33-32cc43ef32ea"
+      (reference "#PWR070") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/7c2e973f-0a71-4018-9248-4219cb08cc7d"
+      (reference "#PWR071") (unit 1) (value "+BATT") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/51ecff29-9df7-4e92-a555-00674a36aeb3"
+      (reference "#PWR072") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/08571d56-dbef-4ab6-8eb6-2fcf2db4e8f9"
+      (reference "#PWR073") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/c817b4eb-aee1-4eeb-a635-39b5699441bb"
+      (reference "#PWR074") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/b23cb93b-0789-4373-a4a3-50b69830ddd6/5ca6ee69-6017-4d61-9716-009655ac82a5"
+      (reference "#PWR075") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/6504306f-986c-4a69-b26b-3ffbe6d14390"
+      (reference "#PWR076") (unit 1) (value "+BATT") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/4d459e24-b8cc-4795-b868-10c99e5f68f9"
+      (reference "#PWR077") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/f6e278ce-fbd5-4cdf-b207-88e15d47783c"
+      (reference "#PWR078") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/8b40f8da-57b9-4fd0-a3c1-9207e14121dd"
+      (reference "#PWR079") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/713b7085-dd17-45a6-b8c0-ebc420ef0654"
+      (reference "#PWR080") (unit 1) (value "+BATT") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/33cc7e0c-fedc-4156-8593-27424dc16b42"
+      (reference "#PWR081") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/2bba4a81-5626-428c-a78b-665f569b5d7c"
+      (reference "#PWR082") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/314c5d09-7274-4d43-b9f0-069ed6f8d5de"
+      (reference "#PWR083") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/25da08da-fc4b-4e04-bb4d-5f8fdecf9821/ba45f837-976e-4e7f-abed-de720a4d03c9"
+      (reference "#PWR0101") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/8276bbc3-6358-46f7-b736-21018cd3e593"
+      (reference "#PWR0102") (unit 1) (value "+BATT") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/f8cb56e4-f995-4831-b4f2-7cf161b012f3"
+      (reference "#PWR0103") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/848a0cb9-1cfa-4c19-bc54-f5b6a201c7ce"
+      (reference "#PWR0104") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/16649623-8805-4b6e-a44d-97200ae07b87"
+      (reference "#PWR0106") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/addb48bf-d26c-4ab6-9938-e14d3a822677"
+      (reference "#PWR0107") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/d4cfe97f-0068-4259-b4ac-50e1af61ea84"
+      (reference "#PWR0108") (unit 1) (value "+BATT") (footprint "")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/6893be59-312f-4ef3-ba81-abb9baffb8d1"
+      (reference "C1") (unit 1) (value "300 pF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/5e42748a-0f2b-4f7c-bd97-811353bc9fad"
+      (reference "C2") (unit 1) (value "300 pF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/b23cb93b-0789-4373-a4a3-50b69830ddd6/feb03898-4c4e-4a28-811a-48778cd19053"
+      (reference "C3") (unit 1) (value "4.7 uF") (footprint "Capacitor_SMD:C_1206_3216Metric")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/911014de-d976-4bcf-add5-8236a1785251"
+      (reference "C4") (unit 1) (value "0.1 uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/b23cb93b-0789-4373-a4a3-50b69830ddd6/04834698-15c2-415b-aa35-d37832a016da"
+      (reference "C5") (unit 1) (value "0.1 uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/b695d951-bc92-432c-864f-6f074c146857"
+      (reference "C6") (unit 1) (value "0.1 uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/11368172-2b76-42a3-88bd-ed8b4b0d98f7"
+      (reference "C7") (unit 1) (value "0.1 uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/a9740d9a-6d32-4874-a112-18472306bb7f"
+      (reference "C8") (unit 1) (value "4.7 uF") (footprint "Capacitor_SMD:C_1206_3216Metric")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/e1d751a7-fec2-42ca-ae1f-e79cc082384b"
+      (reference "C9") (unit 1) (value "300 pF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/bc4ae4a6-08ea-4fb6-a845-edfc476693da"
+      (reference "C10") (unit 1) (value "22 uF CL31A226KOHNNNE") (footprint "Capacitor_SMD:C_1206_3216Metric")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/33d2164a-7a23-4178-93d5-40d3dde503bc"
+      (reference "C11") (unit 1) (value "22 uF CL31A226KOHNNNE") (footprint "Capacitor_SMD:C_1206_3216Metric")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/db71a595-cd30-49ed-8c15-0c477e5462bd"
+      (reference "C12") (unit 1) (value "DNL 22 uF CL31A226KOHNNNE") (footprint "Capacitor_SMD:C_1206_3216Metric")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/751aa29b-8b1f-40ce-93aa-1e0c0a596608"
+      (reference "C13") (unit 1) (value "0.1 uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/e6c692e0-44a1-4faf-8c17-b696d75f43c9"
+      (reference "C14") (unit 1) (value "0.1 uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/999d64d9-34c5-4c3b-8a65-99f8b99d9365"
+      (reference "C15") (unit 1) (value "0.1 uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/a442f8c5-87ef-41b4-b00e-d4041d83e733"
+      (reference "C16") (unit 1) (value "0.1 uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/00713f5f-7b2b-4712-8fd4-8d8812cf621e"
+      (reference "D1") (unit 1) (value "SK9822-2020") (footprint "badge_custom_parts:LED-SK9822-2020")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/76152e89-221e-41c0-9384-eecc366b60d8"
+      (reference "D2") (unit 1) (value "SK9822-2020") (footprint "badge_custom_parts:LED-SK9822-2020")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/fb4a7138-361e-4bcb-8556-d55b79b72068"
+      (reference "D3") (unit 1) (value "SK9822-2020") (footprint "badge_custom_parts:LED-SK9822-2020")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/a12fd704-4c7e-4447-8a12-eaeeca955827"
+      (reference "D4") (unit 1) (value "SK9822-2020") (footprint "badge_custom_parts:LED-SK9822-2020")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/c59a4575-781a-476d-b609-abf4a79771c1"
+      (reference "D5") (unit 1) (value "SK9822-2020") (footprint "badge_custom_parts:LED-SK9822-2020")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/42a938ab-f54f-4d0c-9562-9f0378d8ea83"
+      (reference "D6") (unit 1) (value "SK9822-2020") (footprint "badge_custom_parts:LED-SK9822-2020")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/b84dfeba-b6ed-4f8f-8e20-ec945ab4ee43"
+      (reference "D7") (unit 1) (value "SK9822-2020") (footprint "badge_custom_parts:LED-SK9822-2020")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/3a7ee926-34dc-4f9f-b469-4a392eade24d"
+      (reference "D8") (unit 1) (value "SK9822-2020") (footprint "badge_custom_parts:LED-SK9822-2020")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/eeb45cf2-47b1-4f32-ab24-61b40b9025df"
+      (reference "D9") (unit 1) (value "SK9822-2020") (footprint "badge_custom_parts:LED-SK9822-2020")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/d50ce8cb-8bf9-4487-9b91-b8510fa7629b"
+      (reference "D10") (unit 1) (value "SK9822-2020") (footprint "badge_custom_parts:LED-SK9822-2020")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/1bf37515-9226-411c-b3fd-83421cb911ce"
+      (reference "D11") (unit 1) (value "SK9822-2020") (footprint "badge_custom_parts:LED-SK9822-2020")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/33d8e587-bd12-4ae4-a6ab-fb4b8343a869"
+      (reference "D12") (unit 1) (value "SK9822-2020") (footprint "badge_custom_parts:LED-SK9822-2020")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/6eab4869-e40c-479e-9670-d400cfc837a9"
+      (reference "D13") (unit 1) (value "SK9822-2020") (footprint "badge_custom_parts:LED-SK9822-2020")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/37708a2c-efea-4844-8be8-5ef410e091e5"
+      (reference "D14") (unit 1) (value "SK9822-2020") (footprint "badge_custom_parts:LED-SK9822-2020")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/4f144f6c-5179-4923-b5a1-d4c5bc8b7307"
+      (reference "D15") (unit 1) (value "SK9822-2020") (footprint "badge_custom_parts:LED-SK9822-2020")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/1fe60797-ad8e-4c0c-aa3a-0f84fd91f07b"
+      (reference "D16") (unit 1) (value "SK9822-2020") (footprint "badge_custom_parts:LED-SK9822-2020")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/44b26854-a890-48bf-a8b4-90a59c12d406"
+      (reference "D17") (unit 1) (value "SK9822-2020") (footprint "badge_custom_parts:LED-SK9822-2020")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/aecb3672-5dbe-4a9b-b077-362c3957efc1"
+      (reference "D18") (unit 1) (value "SK9822-2020") (footprint "badge_custom_parts:LED-SK9822-2020")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/ea45ca20-afb6-42aa-aaa5-1c035cd8773e"
+      (reference "D19") (unit 1) (value "SK9822-2020") (footprint "badge_custom_parts:LED-SK9822-2020")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/33ddb9cf-7c25-47cd-b479-7cab93c21aba"
+      (reference "D20") (unit 1) (value "SK9822-2020") (footprint "badge_custom_parts:LED-SK9822-2020")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/00d82064-221f-4470-804c-ec69c75e9af2"
+      (reference "D21") (unit 1) (value "SK9822-2020") (footprint "badge_custom_parts:LED-SK9822-2020")
+    )
+    (path "/25da08da-fc4b-4e04-bb4d-5f8fdecf9821/65632de2-168e-4dae-a5b5-b41110ac97a2"
+      (reference "D22") (unit 1) (value "XZMDKCBDDG45S-9") (footprint "badge_custom_parts:LED_SunLed-PLCC4_3.2x2.8mm_CW")
+    )
+    (path "/25da08da-fc4b-4e04-bb4d-5f8fdecf9821/debf91fa-0030-4d43-8f16-50d6480777dd"
+      (reference "D23") (unit 1) (value "XZMDKCBDDG45S-9") (footprint "badge_custom_parts:LED_SunLed-PLCC4_3.2x2.8mm_CW")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/2b32990f-2688-4014-a8ee-6ed25a2191eb"
+      (reference "D24") (unit 1) (value "SS2FH10") (footprint "Diode_SMD:D_SMF")
+    )
+    (path "/b23cb93b-0789-4373-a4a3-50b69830ddd6/1fefdf64-09f8-4dd1-a385-bd06fb1ccd04"
+      (reference "J1") (unit 1) (value "USB_B_Micro") (footprint "badge_custom_parts:USB_Micro-B_Amphenol_10118192-0001LF_Horizontal")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/56bd5dde-f303-44cf-93ab-50889e727707"
+      (reference "J2") (unit 1) (value "Conn_01x02_Male") (footprint "badge_custom_parts:BATTERY_PADS")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/f4839a53-1915-4d89-be7c-cfb1dc29e86a"
+      (reference "JP1") (unit 1) (value "SolderJumper_2_Bridged") (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/b11b971f-4c48-4aaa-9bd0-4199f2647088"
+      (reference "JP2") (unit 1) (value "SolderJumper_3_Bridged12") (footprint "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/45c3aeeb-397c-48b9-ac15-abbe4e030600"
+      (reference "L1") (unit 1) (value "10 uH NRS5020T100MMGJ") (footprint "Inductor_SMD:L_Taiyo-Yuden_NR-50xx")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/09cf20a6-4cdf-4586-829b-34542a1a9240"
+      (reference "MK1") (unit 1) (value "SPH0655LM4H-1") (footprint "Sensor_Audio:Knowles_LGA-5_3.5x2.65mm")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/1ec47b90-48a0-4da4-900e-24dccbdcad4f"
+      (reference "Q1") (unit 1) (value "SSM3J332R,LF") (footprint "Package_TO_SOT_SMD:SOT-23")
+    )
+    (path "/25da08da-fc4b-4e04-bb4d-5f8fdecf9821/3922262d-023d-4a0b-912e-4c4b366bdb35"
+      (reference "R1") (unit 1) (value "84.5") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/25da08da-fc4b-4e04-bb4d-5f8fdecf9821/41c0fb41-f1f9-459d-ba8c-1bb6656dc8e6"
+      (reference "R2") (unit 1) (value "422") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/25da08da-fc4b-4e04-bb4d-5f8fdecf9821/51982012-98e5-406d-9843-e76d4345f2cf"
+      (reference "R3") (unit 1) (value "154") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/25da08da-fc4b-4e04-bb4d-5f8fdecf9821/b129204b-232b-4d11-ae1a-4af9f1bc919b"
+      (reference "R4") (unit 1) (value "84.5") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/25da08da-fc4b-4e04-bb4d-5f8fdecf9821/421cc583-b2d8-4200-b145-8df83799751f"
+      (reference "R5") (unit 1) (value "422") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/25da08da-fc4b-4e04-bb4d-5f8fdecf9821/0fbf5a3d-c72b-4032-8b75-e5e3ca36e864"
+      (reference "R6") (unit 1) (value "154") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/4f5d65ed-943f-4945-9baf-5dc1b1120b1f"
+      (reference "R7") (unit 1) (value "DNL 10k") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/2ac4f2d4-dc5d-4be7-9cbc-323946acb4fe"
+      (reference "R8") (unit 1) (value "DNL 10k") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/64ea1cdb-62e4-49c5-b7de-0ade3f2e469f"
+      (reference "R9") (unit 1) (value "DNL 10k") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/b72922f4-85cf-48e3-8ab5-a26ff925d4f8"
+      (reference "R10") (unit 1) (value "DNL 10k") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/b23cb93b-0789-4373-a4a3-50b69830ddd6/dd472471-f193-48d5-889c-efd694d3f702"
+      (reference "R11") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/d5994088-7d74-4bed-9344-6f7a279e5507"
+      (reference "R12") (unit 1) (value "5.11") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/fa886383-70ec-482c-9916-e0f636795440"
+      (reference "R13") (unit 1) (value "DNL 10k") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/95828229-cb33-40e5-8385-9b24fd663737"
+      (reference "SW1") (unit 1) (value "SW_Push") (footprint "badge_custom_parts:FIXED_SW_Push_1P1T_NO_6x6mm_H9.5mm")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/4f74de9d-609c-4a8b-875a-383c28c89cd7"
+      (reference "SW2") (unit 1) (value "SW_Push") (footprint "badge_custom_parts:FIXED_SW_Push_1P1T_NO_6x6mm_H9.5mm")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/c3da28e2-ee23-4ae0-b831-3db66acc8c71"
+      (reference "SW3") (unit 1) (value "SW_Push") (footprint "badge_custom_parts:FIXED_SW_Push_1P1T_NO_6x6mm_H9.5mm")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/67019c68-a231-48ae-ba2a-074cf0449648"
+      (reference "SW4") (unit 1) (value "SW_Push") (footprint "badge_custom_parts:FIXED_SW_Push_1P1T_NO_6x6mm_H9.5mm")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/c77bedfd-a970-4b33-9805-5baef37c9403"
+      (reference "TP1") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_1.0x1.0mm")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/273e8a5b-aa8c-49e8-8598-81a66b3bad17"
+      (reference "TP2") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_1.0x1.0mm")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/7ad90f9e-8d07-4282-a2a7-3580ff97dd73"
+      (reference "TP3") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_2.0x2.0mm")
+    )
+    (path "/b23cb93b-0789-4373-a4a3-50b69830ddd6/5853b38a-2e89-4e42-9f73-a33fe4e7cbb1"
+      (reference "TP4") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_2.0x2.0mm")
+    )
+    (path "/b23cb93b-0789-4373-a4a3-50b69830ddd6/c712572b-2741-4f06-ad04-3c463e0476f1"
+      (reference "TP5") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_2.0x2.0mm")
+    )
+    (path "/b23cb93b-0789-4373-a4a3-50b69830ddd6/fb556509-8b7a-4abf-9e8a-5f6a44968bfc"
+      (reference "TP6") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_2.0x2.0mm")
+    )
+    (path "/b23cb93b-0789-4373-a4a3-50b69830ddd6/20f8ea20-3e05-41a8-bce4-3bf78644f963"
+      (reference "TP7") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_2.0x2.0mm")
+    )
+    (path "/b23cb93b-0789-4373-a4a3-50b69830ddd6/99d0b4e0-7ee0-43c6-acb6-94297bde2660"
+      (reference "TP8") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_2.0x2.0mm")
+    )
+    (path "/b23cb93b-0789-4373-a4a3-50b69830ddd6/d8e12067-1b53-4d88-b3d2-e88fddf4da45"
+      (reference "TP9") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_2.0x2.0mm")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/ef0e4d08-ebeb-4bbc-b6ef-df3ba0767315"
+      (reference "TP10") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_1.0x1.0mm")
+    )
+    (path "/9fd62386-529f-4178-941a-e8394d1832cc/07fa1142-52e4-4925-9c4b-9435f17f8932"
+      (reference "TP11") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_1.0x1.0mm")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/5c8c71fa-a339-4a7d-bb77-a1094f247d0b"
+      (reference "TP12") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_1.0x1.0mm")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/461a13f1-dcd3-4106-8c10-0ecbe15a0cf4"
+      (reference "TP13") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_1.0x1.0mm")
+    )
+    (path "/c867c346-d368-4302-926d-fd4f4b61cf9f/cedc2389-e6d4-406d-b51f-c28b21efed94"
+      (reference "TP14") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_1.0x1.0mm")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/86b5aff3-7ecd-4b5a-ab36-8197ec593a63"
+      (reference "TP15") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_1.0x1.0mm")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/de234304-6129-4fa5-946c-a79dc0ffdbb3"
+      (reference "TP16") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_1.0x1.0mm")
+    )
+    (path "/b23cb93b-0789-4373-a4a3-50b69830ddd6/78a0fbf2-9278-45c2-9bb2-975f5e17dcb3"
+      (reference "U1") (unit 1) (value "BL653") (footprint "badge_custom_parts:BL653")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/643d7fc9-400e-4f23-927c-32a10ceb1159"
+      (reference "U2") (unit 1) (value "SN74LVC8T245") (footprint "badge_custom_parts:SupplyChainFML-DB_DBQ_PW-24")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/a444f026-52f8-437f-9eab-016448327fe7"
+      (reference "U3") (unit 1) (value "TPS613222ADBV") (footprint "Package_TO_SOT_SMD:SOT-23-5")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/e8af5fe4-ea96-407d-a9b0-103099a721e8"
+      (reference "U4") (unit 1) (value "SN74LVC8T245") (footprint "badge_custom_parts:SupplyChainFML-SO_SOIC-24")
+    )
+    (path "/f5488d43-90f0-4802-a436-5b323d0cace2/3d7592ad-c3a0-42cd-918d-99cb717d916c"
+      (reference "U5") (unit 1) (value "SN74LVC8T245") (footprint "Package_SO:TSSOP-24_4.4x5mm_P0.4mm")
+    )
+  )
+)

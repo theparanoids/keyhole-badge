@@ -1,0 +1,118 @@
+/dts-v1/;
+#include <nordic/nrf52833_qiaa.dtsi>
+
+/ {
+	model = "Paranoids Blinky Badge";
+	compatible = "paranoids,badge";
+
+	chosen {
+		zephyr,console = &uart0;
+		zephyr,shell-uart = &uart0;
+		zephyr,uart-mcumgr = &uart0;
+		zephyr,bt-mon-uart = &uart0;
+		zephyr,bt-c2h-uart = &uart0;
+		zephyr,sram = &sram0;
+		zephyr,flash = &flash0;
+		zephyr,code-partition = &code_partition;
+	};
+
+	buttons {
+		compatible = "gpio-keys";
+		button1: button_1 {
+			gpios = <&gpio0 16 GPIO_PULL_UP>;
+			label = "Push button switch 1 (SW1)";
+		};
+		button2: button_2 {
+			gpios = <&gpio0 20 GPIO_PULL_UP>;
+			label = "Push button switch 2 (SW2)";
+		};
+		button3: button_3 {
+			gpios = <&gpio1 5 GPIO_PULL_UP>;
+			label = "Push button switch 3 (SW9)";
+		};
+		button4: button_4 {
+			gpios = <&gpio1 6 GPIO_PULL_UP>;
+			label = "Push button switch 4 (SW10)";
+		};
+	};
+};
+
+flash: &flash0 {
+	status = "okay";
+	partitions {
+		compatible = "fixed-partitions";
+		#address-cells = <1>;
+		#size-cells = <1>;
+
+		code_partition: partition@0 {
+			label = "code";
+			reg = <0x000000000 0x7A000>;
+		};
+
+		storage_partition: partition@7a000 {
+			label = "storage";
+			reg = <0x0007A000 0x6000>;
+		};
+	};
+};
+
+&adc {
+	status = "okay";
+};
+
+&gpiote {
+	status = "okay";
+};
+
+&gpio0 {
+	status = "okay";
+};
+
+&gpio1 {
+	status = "okay";
+};
+
+&uart0 {
+	compatible = "nordic,nrf-uart";
+	current-speed = <115200>;
+	status = "okay";
+	tx-pin = <32>;
+	rx-pin = <33>;
+};
+
+left_eye_pwm: &pwm0 {
+	status = "okay";
+	ch0-pin = <23>;
+	ch1-pin = <2>;
+	ch2-pin = <3>;
+};
+
+right_eye_pwm: &pwm1 {
+	status = "okay";
+	ch0-pin = <7>;
+	ch1-pin = <6>;
+	ch2-pin = <26>;
+};
+
+pdm: &pdm0 {
+	status = "okay";
+	clk-pin = <22>;
+	din-pin = <24>;
+};
+
+spi_leds: &spi0 {
+	compatible = "nordic,nrf-spim";
+	status = "okay";
+	sck-pin = <11>;
+	mosi-pin = <8>;
+	miso-pin = <8>;
+};
+
+zephyr_udc0: &usbd {
+	compatible = "nordic,nrf-usbd";
+	status = "okay";
+	cdc_acm_uart0 {
+		compatible = "zephyr,cdc-acm-uart";
+		label = "CDC_ACM_0";
+	};
+};

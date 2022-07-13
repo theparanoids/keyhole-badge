@@ -1,0 +1,19 @@
+identifier: paranoids_badge
+name: Paranoids Blinky Badge
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+supported:
+  - adc
+  - usb_device
+  - ble
+  - ieee802154
+  - pwm
+  - watchdog
+  - gpio
+  - counter
+  - spi
+  - i2c

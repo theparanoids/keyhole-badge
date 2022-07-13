@@ -1,0 +1,53 @@
+### Module positions - created on Friday, May 13, 2022 at 10:36:04 AM ###
+### Printed by Pcbnew version (6.0.1-0)
+## Unit = mm, Angle = deg.
+## Side : bottom
+# Ref     Val                        Package                                               PosX       PosY       Rot  Side
+C1        300_pF                     C_0603_1608Metric                                -113.2000  -143.0000   90.0000  bottom
+C2        300_pF                     C_0603_1608Metric                                -113.2000  -146.0000   90.0000  bottom
+C3        4.7_uF                     C_1206_3216Metric                                -126.6000  -135.0000    0.0000  bottom
+C4        0.1_uF                     C_0603_1608Metric                                -116.8000   -67.2000    0.0000  bottom
+C5        0.1_uF                     C_0603_1608Metric                                -120.5000  -135.5000  180.0000  bottom
+C6        0.1_uF                     C_0603_1608Metric                                -146.2000   -71.6000  -90.0000  bottom
+C7        0.1_uF                     C_0603_1608Metric                                -146.0000   -57.2000  180.0000  bottom
+C8        4.7_uF                     C_1206_3216Metric                                -120.2000   -45.2000  -90.0000  bottom
+C9        300_pF                     C_0603_1608Metric                                -113.8000   -37.3500   90.0000  bottom
+C10       22_uF_CL31A226KOHNNNE      C_1206_3216Metric                                -122.4000   -40.1500  -90.0000  bottom
+C11       22_uF_CL31A226KOHNNNE      C_1206_3216Metric                                -124.8000   -40.1500  -90.0000  bottom
+C12       DNL_22_uF_CL31A226KOHNNNE  C_1206_3216Metric                                -127.2000   -40.1500  -90.0000  bottom
+C13       0.1_uF                     C_0603_1608Metric                                -144.8000  -114.0000    0.0000  bottom
+C14       0.1_uF                     C_0603_1608Metric                                -127.4000   -68.1000    0.0000  bottom
+C15       0.1_uF                     C_0603_1608Metric                                -126.4000   -56.8000  180.0000  bottom
+C16       0.1_uF                     C_0603_1608Metric                                -116.4000   -57.8000    0.0000  bottom
+D22       XZMDKCBDDG45S-9            LED_SunLed-PLCC4_3.2x2.8mm_CW                    -133.0000   -50.0000  -90.0000  bottom
+D23       XZMDKCBDDG45S-9            LED_SunLed-PLCC4_3.2x2.8mm_CW                    -151.0000   -50.0000  -90.0000  bottom
+D24       SS2FH10                    D_SMF                                            -115.7500   -39.5000  -90.0000  bottom
+J1        USB_B_Micro                USB_Micro-B_Amphenol_10118192-0001LF_Horizontal  -140.8000  -149.3000  180.0000  bottom
+J2        Conn_01x02_Male            BATTERY_PADS                                     -104.0000   -50.0000    0.0000  bottom
+L1        10_uH_NRS5020T100MMGJ      L_Taiyo-Yuden_NR-50xx                            -116.0000   -44.7500   90.0000  bottom
+MK1       SPH0655LM4H-1              Knowles_LGA-5_3.5x2.65mm                         -143.0000  -111.0000    0.0000  bottom
+Q1        SSM3J332R,LF               SOT-23                                           -111.9000   -49.6000  -90.0000  bottom
+R1        TBD_84.5                   R_0603_1608Metric                                -133.8000   -44.8000   90.0000  bottom
+R2        TBD_422                    R_0603_1608Metric                                -133.8000   -55.2000  -90.0000  bottom
+R3        TBD_154                    R_0603_1608Metric                                -132.2000   -55.2000  -90.0000  bottom
+R4        TBD_84.5                   R_0603_1608Metric                                -149.3000   -45.2000  180.0000  bottom
+R5        TBD_422                    R_0603_1608Metric                                -151.8000   -55.1000  -90.0000  bottom
+R6        TBD_154                    R_0603_1608Metric                                -150.2000   -55.1000  -90.0000  bottom
+R7        DNL_10k                    R_0603_1608Metric                                -143.2000  -132.6000    0.0000  bottom
+R8        DNL_10k                    R_0603_1608Metric                                -149.2000  -147.6000  180.0000  bottom
+R9        DNL_10k                    R_0603_1608Metric                                -110.8000  -132.6000  180.0000  bottom
+R10       DNL_10k                    R_0603_1608Metric                                -109.0000  -143.4000  180.0000  bottom
+R11       10k                        R_0603_1608Metric                                -135.2000  -139.0000  -90.0000  bottom
+R12       5.11                       R_0603_1608Metric                                -113.8000   -40.3500   90.0000  bottom
+R13       DNL_10k                    R_0603_1608Metric                                -144.0000  -118.0000    0.0000  bottom
+Ref**     Val**                      background8_text_v7b                             -128.1620   -88.7354  180.0000  bottom
+SW1       SW_Push                    FIXED_SW_Push_1P1T_NO_6x6mm_H9.5mm               -147.3200  -127.0000  -78.7300  bottom
+SW2       SW_Push                    FIXED_SW_Push_1P1T_NO_6x6mm_H9.5mm               -149.8600  -139.7000  -78.7300  bottom
+SW3       SW_Push                    FIXED_SW_Push_1P1T_NO_6x6mm_H9.5mm               -106.6800  -127.0000   78.7300  bottom
+SW4       SW_Push                    FIXED_SW_Push_1P1T_NO_6x6mm_H9.5mm               -104.1400  -139.7000   78.7300  bottom
+U1        BL653                      BL653                                            -120.5000  -144.9000   90.0000  bottom
+U2        SN74LVC8T245               SupplyChainFML-DB_DBQ_PW-24                      -123.0000   -62.5000   90.0000  bottom
+U3        TPS613222ADBV              SOT-23-5                                         -119.0000   -40.0000    0.0000  bottom
+U4        SN74LVC8T245               SupplyChainFML-SO_SOIC-24                        -140.5000   -64.0000   90.0000  bottom
+U5        SN74LVC8T245               TSSOP-24_4.4x5mm_P0.4mm                          -113.5000   -62.5000   90.0000  bottom
+## End

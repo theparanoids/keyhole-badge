@@ -1,0 +1,13 @@
+if BOARD_PARANOIDS_BADGE
+
+config BOARD
+	default "paranoids_badge"
+
+config IEEE802154_NRF5
+	default y
+	depends on IEEE802154
+
+config BT_CTLR
+	default BT
+
+endif # BOARD_PARANOIDS_BADGE
