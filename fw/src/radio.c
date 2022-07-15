@@ -24,7 +24,7 @@
 // Advertising payload
 static const struct bt_data ad[] = {
 	BT_DATA_BYTES(BT_DATA_FLAGS, BT_LE_AD_NO_BREDR),
-	BT_DATA(BT_DATA_GAP_APPEARANCE, MAGIC_APPEARANCE, 2),
+	BT_DATA(BT_DATA_GAP_APPEARANCE, MAGIC_APPEARANCE_EASTEREGG, 2),
 	BT_DATA(BT_DATA_MANUFACTURER_DATA, MAGIC_MANUF_DATA, MAGIC_MANUF_DATA_LEN),
 };
 
@@ -32,6 +32,44 @@ static const struct bt_data ad[] = {
 static const struct bt_data sd[] = {
 	BT_DATA(BT_DATA_NAME_COMPLETE, DEVICE_NAME, DEVICE_NAME_LEN),
 };
+
+// <3 DCFurs badges
+#define DEVICE_NAME_DCFURS "Paranoids <3 DCFurs"
+#define DEVICE_NAME_DCFURS_LEN (sizeof(DEVICE_NAME_DCFURS) - 1)
+
+#define MAGIC_MANUF_DATA_DC26	"\xFF\x71\xB2\x00\x00Y!"
+#define MAGIC_MANUF_DATA_DC26_LEN (sizeof(MAGIC_MANUF_DATA_DC26) - 1)
+
+#define MAGIC_MANUF_DATA_DC27	"\xFF\x71\xB2\x7FY!"
+#define MAGIC_MANUF_DATA_DC27_LEN (sizeof(MAGIC_MANUF_DATA_DC27) - 1)
+
+// Advertising payload
+static const struct bt_data ad_dc26[] = {
+	BT_DATA_BYTES(BT_DATA_FLAGS, BT_LE_AD_NO_BREDR),
+	BT_DATA(BT_DATA_GAP_APPEARANCE, "\xDC\x26", 2),
+	BT_DATA(BT_DATA_MANUFACTURER_DATA, MAGIC_MANUF_DATA_DC26, MAGIC_MANUF_DATA_DC26_LEN),
+};
+
+// Scan response payload
+static const struct bt_data sd_dc26[] = {
+	BT_DATA(BT_DATA_NAME_COMPLETE, DEVICE_NAME_DCFURS, DEVICE_NAME_DCFURS_LEN),
+};
+
+// Advertising payload
+static const struct bt_data ad_dc27[] = {
+	BT_DATA_BYTES(BT_DATA_FLAGS, BT_LE_AD_NO_BREDR),
+	BT_DATA(BT_DATA_GAP_APPEARANCE, "\xDC\x27", 2),
+	BT_DATA(BT_DATA_MANUFACTURER_DATA, MAGIC_MANUF_DATA_DC27, MAGIC_MANUF_DATA_DC27_LEN),
+};
+
+// Scan response payload
+static const struct bt_data sd_dc27[] = {
+	BT_DATA(BT_DATA_NAME_COMPLETE, DEVICE_NAME_DCFURS, DEVICE_NAME_DCFURS_LEN),
+};
+
+
+// Advertising sets
+struct bt_le_ext_adv *ble_adv_sets[3];
 
 
 // Peer tracking
@@ -192,6 +230,8 @@ static void device_found(const bt_addr_le_t *addr, int8_t rssi, uint8_t type,
 	}
 }
 
+#define BT_LE_ADV_NCONN_SCANNABLE BT_LE_ADV_PARAM(BT_LE_ADV_OPT_SCANNABLE, BT_GAP_ADV_FAST_INT_MIN_2, BT_GAP_ADV_FAST_INT_MAX_2, NULL)
+
 static void bt_ready(int err)
 {
 	if (err) {
@@ -201,9 +241,57 @@ static void bt_ready(int err)
 
 	printk("Bluetooth initialized\n");
 
-	err = bt_le_adv_start(BT_LE_ADV_NCONN, ad, ARRAY_SIZE(ad), sd, ARRAY_SIZE(sd));
+	err = bt_le_ext_adv_create(BT_LE_ADV_NCONN_SCANNABLE, 0, &ble_adv_sets[0]);
 	if (err) {
-		printk("Advertising failed to start (err %d)\n", err);
+		printk("Advertising set 0 failed to create (err %d)\n", err);
+		return;
+	}
+
+	err = bt_le_ext_adv_set_data(ble_adv_sets[0], ad, ARRAY_SIZE(ad), sd, ARRAY_SIZE(sd));
+	if (err) {
+		printk("Advertising set 0 failed to set data (err %d)\n", err);
+		return;
+	}
+
+	err = bt_le_ext_adv_start(ble_adv_sets[0], BT_LE_EXT_ADV_START_DEFAULT);
+	if (err) {
+		printk("Advertising set 0 failed to start (err %d)\n", err);
+		return;
+	}
+
+	err = bt_le_ext_adv_create(BT_LE_ADV_NCONN_SCANNABLE, 0, &ble_adv_sets[1]);
+	if (err) {
+		printk("Advertising set 1 failed to create (err %d)\n", err);
+		return;
+	}
+
+	err = bt_le_ext_adv_set_data(ble_adv_sets[1], ad_dc26, ARRAY_SIZE(ad_dc26), sd_dc26, ARRAY_SIZE(sd_dc26));
+	if (err) {
+		printk("Advertising set 1 failed to set data (err %d)\n", err);
+		return;
+	}
+
+	err = bt_le_ext_adv_start(ble_adv_sets[1], BT_LE_EXT_ADV_START_DEFAULT);
+	if (err) {
+		printk("Advertising set 1 failed to start (err %d)\n", err);
+		return;
+	}
+
+	err = bt_le_ext_adv_create(BT_LE_ADV_NCONN_SCANNABLE, 0, &ble_adv_sets[2]);
+	if (err) {
+		printk("Advertising set 2 failed to create (err %d)\n", err);
+		return;
+	}
+
+	err = bt_le_ext_adv_set_data(ble_adv_sets[2], ad_dc27, ARRAY_SIZE(ad_dc27), sd_dc27, ARRAY_SIZE(sd_dc27));
+	if (err) {
+		printk("Advertising set 2 failed to set data (err %d)\n", err);
+		return;
+	}
+
+	err = bt_le_ext_adv_start(ble_adv_sets[2], BT_LE_EXT_ADV_START_DEFAULT);
+	if (err) {
+		printk("Advertising set 2 failed to start (err %d)\n", err);
 		return;
 	}
 
